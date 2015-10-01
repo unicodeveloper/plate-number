@@ -1,0 +1,30 @@
+{
+  "name": "plate-number",
+  "version": "1.0.0",
+  "description": "A simple library to generate random car license plate numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busayo/plate-number.git"
+  },
+  "keywords": [
+    "Car",
+    "Plate",
+    "numbers",
+    "Vehicles",
+    "License",
+    "Generate"
+  ],
+  "author": "Prosper Otemuyiwa <prosperotemuyiwa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/busayo/plate-number/issues"
+  },
+  "engines": {
+    "node": ">=0.12.6"
+  },
+  "homepage": "https://github.com/busayo/plate-number#readme"
+}
