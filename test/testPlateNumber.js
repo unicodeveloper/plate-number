@@ -11,9 +11,8 @@ describe('Plate Number', function() {
 
     it('should generate two letters', function() {
         var result = plateNumber.genlastTwoLetters();
-        expect(result).to.equal('12');
+        expect(result).to.equal('AB');
     });
-
 
     it('should return an object of strings', function() {
         var result = plateNumber.plateNumber.localGovtAreas;
