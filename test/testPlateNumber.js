@@ -5,8 +5,8 @@ var plateNumber = require('../src/index');
 
 describe('Plate Number', function() {
     it('should generate random number', function() {
-        var result = plateNumber.genRandomNumber();
-        expect(result).to.equal('1');
+        var randomNumber = plateNumber.genRandomNumber(0, 999);
+        expect(result).to.include(randomNumber);
     });
 
     it('should generate two letters', function() {
@@ -14,13 +14,9 @@ describe('Plate Number', function() {
         expect(result).to.equal('12');
     });
 
-    it('should generate plate number', function() {
-        var result = plateNumber.genPlateNumber();
-        expect(result).to.equal('123');
-    });
 
     it('should return an object of strings', function() {
-        var result = plateNumber.localGovtAreas;
+        var result = plateNumber.plateNumber.localGovtAreas;
         expect(result).to.be.an('object');
     });
 
