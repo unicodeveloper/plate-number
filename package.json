@@ -4,7 +4,8 @@
   "description": "A simple library to generate random car license plate numbers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha --reporter spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,10 @@
   "engines": {
     "node": ">=0.12.6"
   },
-  "homepage": "https://github.com/busayo/plate-number#readme"
+  "homepage": "https://github.com/busayo/plate-number#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "coveralls": "^2.11.4",
+    "mocha": "^2.3.3"
+  }
 }

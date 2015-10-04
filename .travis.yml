@@ -1,0 +1,26 @@
+sudo: false
+
+language: node_js
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
+
+node_js:
+  - stable
+  - iojs
+
+install:
+  - npm install
+
+script:
+  - npm run cover
+
+#Send coverage data to Coveralls
+after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
+
+notifications:
+  slack: red-creek:5lI8ybvl6YTcCNPosh4TE13h
